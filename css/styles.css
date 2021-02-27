@@ -113,6 +113,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--anime-function);
 }
 
 .link:hover,
@@ -144,6 +145,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms var(--anime-function);
 }
 
 .link-mail:hover,
@@ -217,6 +219,7 @@ button {
   border-radius: 50%;
   color: var(--text-white);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--anime-function), color 250ms var(--anime-function), box-shadow 250ms var(--anime-function);
 }
 
 .social-list .link:hover,
@@ -343,6 +346,27 @@ button {
   text-align: center;
 }
 
+.deal-thumb {
+  position: relative;
+}
+
+.deal-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-white);
+  background-color: rgb(47, 48, 58, 0.8);
+}
+
 /* Стили для команды*/
 .team-content {
   padding-top: 30px;
@@ -402,6 +426,7 @@ button {
   width: 40px;
   border-radius: 50%;
   color: var(--icon-color);
+  transition: color 250ms var(--anime-function), background-color 250ms var(--anime-function);
 }
 
 .team-social-list .link:hover,
@@ -428,6 +453,7 @@ button {
   min-height: 90px;
   justify-content: center;
   color: var(--icon-color);
+  transition: color 250ms var(--anime-function), border-color 250ms var(--anime-function);
 }
 
 .clients-list .link:hover, .clients-list .link:focus{
@@ -458,6 +484,7 @@ button {
   letter-spacing: 0.03em;
   background-color: var(--btn-color);
   outline: none;
+  transition: background-color 250ms var(--anime-function), color 250ms var(--anime-function), box-shadow 250ms var(--anime-function);
 }
 
 .portfolio-btn:hover,
@@ -478,6 +505,7 @@ button {
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--size-div));
   margin-top: calc(-1 * var(--size-div));
+  transition: color 450ms var(--anime-function);
 }
 
 .portfolio-card > .item {
