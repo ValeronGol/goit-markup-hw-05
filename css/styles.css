@@ -11,6 +11,7 @@
   --icon-color: #AFB1B8;
   --size-div: 30px;
   --anime-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animу-dur: 250ms;
 }
 
 body,
@@ -113,7 +114,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms var(--anime-function);
+  transition: color var(--animу-dur) var(--anime-function);
 }
 
 .link:hover,
@@ -145,7 +146,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms var(--anime-function);
+  transition: color var(--animу-dur) var(--anime-function);
 }
 
 .link-mail:hover,
@@ -219,7 +220,7 @@ button {
   border-radius: 50%;
   color: var(--text-white);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms var(--anime-function), color 250ms var(--anime-function), box-shadow 250ms var(--anime-function);
+  transition: background-color var(--animу-dur) var(--anime-function), color var(--animу-dur) var(--anime-function), box-shadow var(--animу-dur) var(--anime-function);
 }
 
 .social-list .link:hover,
@@ -429,7 +430,7 @@ button {
   width: 40px;
   border-radius: 50%;
   color: var(--icon-color);
-  transition: color 250ms var(--anime-function), background-color 250ms var(--anime-function);
+  transition: color var(--animу-dur)var(--anime-function), background-color var(--animу-dur) var(--anime-function);
 }
 
 .team-social-list .link:hover,
@@ -456,7 +457,7 @@ button {
   min-height: 90px;
   justify-content: center;
   color: var(--icon-color);
-  transition: color 250ms var(--anime-function), border-color 250ms var(--anime-function);
+  transition: color var(--animу-dur) var(--anime-function), border-color var(--animу-dur) var(--anime-function);
 }
 
 .clients-list .link:hover, .clients-list .link:focus{
@@ -487,7 +488,7 @@ button {
   letter-spacing: 0.03em;
   background-color: var(--btn-color);
   outline: none;
-  transition: background-color 250ms var(--anime-function), color 250ms var(--anime-function), box-shadow 250ms var(--anime-function);
+  transition: background-color var(--animу-dur) var(--anime-function), color var(--animу-dur) var(--anime-function), box-shadow 250ms var(--anime-function);
 }
 
 .portfolio-btn:hover,
@@ -498,9 +499,10 @@ button {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card-link{cursor: pointer;
-  transition: box-shadow 250ms var(--anime-function);
+.card-link {
+  cursor: pointer;
   outline: none;
+  transition: box-shadow var(--animу-dur) var(--anime-function);
 }
 
 .card-link:hover, .card-link:focus {
@@ -547,7 +549,7 @@ button {
   width: 100%;
   background-color: rgb(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms var(--anime-function);
+  transition: transform var(--animу-dur) var(--anime-function);
 }
 
 .portfolio-overlay-text {
@@ -589,7 +591,7 @@ button {
   height: 100%;
   background-color: rgba(0 ,0 ,0 , 0.2);
   opacity: 1;
-  transition: opacity 250ms var(--anime-function:);
+  transition: opacity var(--animу-dur) var(--anime-function:);
 }
 
 .modal {
@@ -601,7 +603,7 @@ button {
   margin: 0 auto;
   background-color: var(--text-white);
   transform: translate(-50%, -50%) scale(1); 
-  transition: transform 250ms var(--anime-function:);
+  transition: transform var(--animу-dur) var(--anime-function:);
 }
 
 .close-btn {
